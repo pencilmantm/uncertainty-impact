@@ -75,7 +75,7 @@ function App() {
           onChange={(e) => setInputText(e.target.value)}
           onKeyPress={(e) => e.key === 'Enter' && addComponent()}
           style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ccc', width: '200px' }}
-          placeholder="Enter scenario or risk"
+          placeholder="Enter Disruption or Disruptor"
         />
         <button
           onClick={addComponent}
@@ -88,7 +88,7 @@ function App() {
             cursor: 'pointer'
           }}
         >
-          Add Item
+          Add
         </button>
         <button
           onClick={captureScreen}
@@ -116,7 +116,7 @@ function App() {
           whiteSpace: 'nowrap',
           fontWeight: 'bold'
         }}>
-          Impact
+          Uncertainty
         </div>
         
         {/* Y-axis values */}
@@ -134,7 +134,7 @@ function App() {
           transform: 'translateX(-50%)',
           fontWeight: 'bold'
         }}>
-          Uncertainty
+          Impact
         </div>
 
         {/* X-axis values */}
@@ -174,8 +174,8 @@ function App() {
               position: 'relative'
             }}>
               <div className="quadrant-label">
-                Primary Risks
-                <div className="quadrant-description">High impact, Low uncertainty – Monitor Closely</div>
+                Fringe Events, Track Changes
+                <div className="quadrant-description">Low Impact, High Uncertainty</div>
               </div>
             </div>
             <div style={{ 
@@ -183,8 +183,8 @@ function App() {
               position: 'relative'
             }}>
               <div className="quadrant-label">
-                Critical Uncertainties
-                <div className="quadrant-description">High impact, High uncertainty – Scenario Plan</div>
+                Game Changers, Plan Ahead
+                <div className="quadrant-description">High impact, High uncertainty</div>
               </div>
             </div>
             <div style={{ 
@@ -192,14 +192,14 @@ function App() {
               position: 'relative'
             }}>
               <div className="quadrant-label">
-                Secondary Risks
-                <div className="quadrant-description">Low impact, Low uncertainty – Regular Review</div>
+                Background Noise, Monitor Only
+                <div className="quadrant-description">Low impact, Low uncertainty</div>
               </div>
             </div>
             <div style={{ position: 'relative' }}>
               <div className="quadrant-label">
-                Minor Uncertainties
-                <div className="quadrant-description">Low impact, High uncertainty – Monitor Changes</div>
+                Clear Threats, Act Now!
+                <div className="quadrant-description">High impact, Low uncertainty</div>
               </div>
             </div>
           </div>
